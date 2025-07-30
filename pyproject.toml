@@ -1,6 +1,6 @@
 [project]
 name = "python-toolbox-przemek"
-version = "0.2.0"
+version = "0.2.1"
 description = "We want to provide basic tools for our day-to-day work."
 authors = [
     {name = "przemek@sagalo.pro"}
