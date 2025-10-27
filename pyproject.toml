@@ -1,6 +1,6 @@
 [project]
 name = "python-toolbox-przemek"
-version = "0.4.1"
+version = "0.4.2"
 description = "We want to provide basic tools for our day-to-day work."
 authors = [
     {name = "przemek@sagalo.pro"}
@@ -20,7 +20,8 @@ lint = [ "black==24.2.0", "isort==5.13.2", "nbqa==1.9.1" ]
 notebook = [ "nbstripout==0.8.1", "jupytext==1.17.0", "ipykernel==6.29.5" ]
 tests = [ 
     "coverage==7.8.2", # Generates tests coverage report.
-    "pytest-xdist==3.8.0" # Runs pytest on many cores.
+    "pytest-xdist==3.8.0", # Runs pytest on many cores.
+    "pytest-datadir==1.8.0" # pytest plugin for test data directories and files - https://pypi.org/project/pytest-datadir/
 ]
 
 [project.scripts]
