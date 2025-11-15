@@ -1,6 +1,6 @@
 [project]
 name = "python-toolbox-przemek"
-version = "0.4.2"
+version = "0.4.3"
 description = "We want to provide basic tools for our day-to-day work."
 authors = [
     {name = "przemek@sagalo.pro"}
@@ -16,7 +16,11 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-lint = [ "black==24.2.0", "isort==5.13.2", "nbqa==1.9.1" ]
+lint = [ "black==24.2.0", 
+         "isort==5.13.2", 
+         "nbqa==1.9.1",
+         "ruff==0.14.5" # Linter and code formatters which can remove not used improts - https://github.com/astral-sh/ruff 
+]
 notebook = [ "nbstripout==0.8.1", "jupytext==1.17.0", "ipykernel==6.29.5" ]
 tests = [ 
     "coverage==7.8.2", # Generates tests coverage report.
