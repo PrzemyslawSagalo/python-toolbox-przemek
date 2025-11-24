@@ -1,6 +1,6 @@
 [project]
 name = "python-toolbox-przemek"
-version = "0.4.3"
+version = "0.5.0"
 description = "We want to provide basic tools for our day-to-day work."
 authors = [
     {name = "przemek@sagalo.pro"}
@@ -27,9 +27,6 @@ tests = [
     "pytest-xdist==3.8.0", # Runs pytest on many cores.
     "pytest-datadir==1.8.0" # pytest plugin for test data directories and files - https://pypi.org/project/pytest-datadir/
 ]
-
-[project.scripts]
-ppce = "python_toolbox_przemek.toolbox_venv:create_venv_unix_like"
 
 [build-system]
 requires = ["setuptools >= 79.0.1"]
