@@ -26,7 +26,8 @@ notebook = [ "nbstripout==0.8.1", "jupytext==1.17.0", "ipykernel==6.29.5" ]
 tests = [ 
     "coverage==7.8.2", # Generates tests coverage report.
     "pytest-xdist==3.8.0", # Runs pytest on many cores.
-    "pytest-datadir==1.8.0" # pytest plugin for test data directories and files - https://pypi.org/project/pytest-datadir/
+    "pytest-datadir==1.8.0", # pytest plugin for test data directories and files - https://pypi.org/project/pytest-datadir/
+    "pytest-regtest==2.3.7"# Package for regression tests.
 ]
 
 [project.scripts]
