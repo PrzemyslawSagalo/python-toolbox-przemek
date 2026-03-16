@@ -1,6 +1,6 @@
 [project]
 name = "python-toolbox-przemek"
-version = "0.6.0"
+version = "0.7.0"
 description = "We want to provide basic tools for our day-to-day work."
 authors = [
     {name = "przemek@sagalo.pro"}
@@ -31,6 +31,9 @@ tests = [
 
 [project.scripts]
 generate_dap_config = "python_toolbox_przemek.dap_cli:generate_dap_config"
+
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [build-system]
 requires = ["setuptools >= 79.0.1"]
