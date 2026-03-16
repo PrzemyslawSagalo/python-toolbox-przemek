@@ -1,6 +1,6 @@
 [project]
 name = "python-toolbox-przemek"
-version = "0.5.0"
+version = "0.6.0"
 description = "We want to provide basic tools for our day-to-day work."
 authors = [
     {name = "przemek@sagalo.pro"}
@@ -12,7 +12,8 @@ requires-python = ">=3.11,<4"
 dependencies = [
     "poetry==2.2.0",
     "pynvim==0.5.2",
-    "debugpy==1.8.14"
+    "debugpy==1.8.14",
+    "click==8.1.7"
 ]
 
 [project.optional-dependencies]
@@ -27,6 +28,9 @@ tests = [
     "pytest-xdist==3.8.0", # Runs pytest on many cores.
     "pytest-datadir==1.8.0" # pytest plugin for test data directories and files - https://pypi.org/project/pytest-datadir/
 ]
+
+[project.scripts]
+generate_dap_config = "python_toolbox_przemek.dap_cli:generate_dap_config"
 
 [build-system]
 requires = ["setuptools >= 79.0.1"]
