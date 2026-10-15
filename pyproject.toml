@@ -18,7 +18,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-lint = [ "black==24.2.0", 
+lint = [ "black==26.3.1", 
          "isort==5.13.2", 
          "nbqa==1.9.1",
          "ruff==0.14.5" # Linter and code formatters which can remove not used improts - https://github.com/astral-sh/ruff 
